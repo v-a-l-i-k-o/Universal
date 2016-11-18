@@ -1,0 +1,29 @@
+@import '../_parts/variables';
+@import '../_mixins/grid-framework';
+//
+// Grid system 5-col
+// --------------------------------------------------
+
+// CUSTOMIZATION: Columns
+
+$grid-columns: 5;
+
+@include make-5th-grid-columns;
+
+@include make-grid(xs-5th);
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm-5th);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md-5th);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg-5th);
+}
+
+@media (min-width: $screen-xlg-min) {
+  @include make-grid(xlg-5th);
+}

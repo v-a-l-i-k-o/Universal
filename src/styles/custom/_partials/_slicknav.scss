@@ -1,0 +1,165 @@
+/* ===== MOBILE MENU ===== */
+
+.slicknav_menu {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: -1.3rem;
+    z-index: 2;
+    *zoom: 1;
+    font-size: 1.6em;
+    background: transparent;
+    box-sizing: border-box;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    & .slicknav_menutxt {
+        float: left; 
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        margin-right: .5em;
+        line-height: 1.188em;
+        text-shadow: 0 1px 3px #000;
+    }
+
+    & .slicknav_icon {
+        margin: .2em 0;
+    }
+
+    & .slicknav_no-text {
+        margin: 0;
+    }
+
+    & .slicknav_icon-bar {
+        display: block;
+        width: 1.125em;
+        height: .125em;
+        background-color: #fff;
+        -webkit-border-radius: 1px;
+           -moz-border-radius: 1px;
+                border-radius: 1px;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+           -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+                box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:before {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+    display: table;
+    content: " ";
+    clear: both;
+    }
+}
+
+.slicknav_btn {
+    float: right;
+    display: block;
+    cursor: pointer; 
+    position: relative;
+    margin:  0 1rem;
+    padding: .43em .62em;
+    line-height: 1.125em;
+    text-decoration: none;
+    background-color: #08C;
+    vertical-align: middle;
+
+    & .slicknav_icon-bar + .slicknav_icon-bar {
+        margin-top: 0.188em;
+    }
+}
+
+.slicknav_nav {
+    top: 3rem;
+    position: relative;
+    margin:  0;
+    padding: 0;
+    clear: both;
+    color: #fff;
+    list-style: none;
+    overflow: hidden;
+    font-size: .875em;
+    background-color: #08c;
+
+    & ul {
+        top: 0;
+        padding: 0;
+        border: none;
+        display: block;
+        overflow: hidden;
+        margin-left: 1em;
+        border-radius: 0;
+        background: none;
+        font-size: inherit;
+        position: relative;
+        line-height: normal;
+    }
+
+    & li {
+        display: block;
+        background-image: none;
+    }
+
+    & .slicknav_arrow {
+        margin-left: .4em;
+        font-size: .8em;
+    }
+
+    & .slicknav_item {
+        cursor: pointer;
+    }
+
+    & .slicknav_item a {
+        margin:  0;
+        padding: 0;
+        display: inline;
+    }
+
+    & .slicknav_row {
+        display: block;
+        padding: 5px 10px;
+
+        &:hover {
+            color: #fff;
+            background: #006ba1;
+        }
+    }
+
+    & a {
+        color: #fff;
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            background: #006ba1;
+            text-decoration: none;
+        }
+    }
+
+    & .slicknav_parent-link a {
+        display: inline;
+        margin:  0;
+        padding: 0;
+    }
+
+    & .slicknav_txtnode {
+        margin-left: 15px;
+    }
+}
+
+.slicknav_brand {
+    color: #fff;
+    float: left;
+    height: 44px;
+    font-size: 18px;
+    padding: 7px 12px;
+    line-height: 30px;
+}

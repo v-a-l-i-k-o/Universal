@@ -1,0 +1,69 @@
+﻿/* ===== FOOTER ===== */
+
+footer {
+  padding: 4rem 0 1.5rem;
+}
+
+.nurse-bottom-list {
+  @include col__f(3);
+
+  a {
+    line-height: 2.4rem;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #1fb4ff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.our-location {
+  @include col__f(3);
+  line-height: 1.6rem;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #313131;
+
+  p {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  p + p {
+    margin-top: .7rem;
+  }
+}
+
+.s-metro {
+  top: .3rem;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  @include sprite-box($s-metro);
+}
+
+.s-location {
+  top: .3rem;
+  left: .3rem;
+  margin: 0;
+  position: absolute;
+  @include sprite-box($s-location);
+}
+
+.callback {
+  @include col__f(3);
+  text-align: right;
+
+  .all-info {
+    line-height: 1;
+  }
+}
+
+.copyright {
+  line-height: 2.4rem;
+  font-weight: 300;
+  font-size: 1em;
+  color: #969696;
+}

@@ -1,0 +1,434 @@
+/* ===== MADIA QUERIES FOR RESPONSIVE DESIGN ===== */
+
+/* ----- DESKTOP VERSION ----- */
+
+@media screen and (max-width: 1140px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .contacts_24-7 {
+    margin-top: 2rem;
+  }
+
+  .we-suggest_brand {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* ----- TABLET VERSION ----- */
+
+@media screen and (max-width: 979px) {
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* ===== HEADER ===== */
+
+  header {
+    padding: .5rem 0;
+
+    .container {
+      line-height: 7.4rem;
+    }
+
+    .sprite {
+      margin-top: -.8rem;
+      vertical-align: middle;
+    }
+  }
+
+  .logo-box {
+    @include col(4);
+  }
+
+  .contacts {
+    @include col(4);
+    text-align: center;
+  }
+
+  .contacts_wrap {
+    @include col(12);
+    vertical-align: middle;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .js .slicknav_menu {
+    display:block;
+  }
+
+  /* ----- SECTION choose-nurse ----- */
+
+  .nurse-item {
+    @include col(6);
+    padding: 1.5rem;
+  }
+
+  /* ----- SECTION selection ----- */
+
+  .selection-form {
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ----- SECTION prices ----- */
+
+  .price-list_cell1 {
+    @include col__f(6);
+  }
+
+  .price-list_cell2 {
+    @include col__f(4.5);
+  }
+
+  .price-list_cell3 {
+    @include col__f(1.5);
+  }
+
+  /* ----- SECTION achievements ----- */
+
+  .achievements-list {
+    margin: 0 auto;
+    max-width: 64rem;
+  }
+
+  .achievements_item {
+    @include col__f(6);
+    margin-bottom: 3rem;
+  }
+
+  /* ----- SECTION our-spec ----- */
+
+  .spec-list_item {
+    @include col(5.9);
+  }
+
+  .spec-list {
+    margin: 0 auto;
+  }
+
+  .spec-person {
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* ----- SECTION reviews ----- */
+
+  .carusel__reviews {
+    max-width: 68rem;
+  }
+
+  /* ----- SECTION licenses ----- */
+
+  .carusel__licenses {
+    max-width: 68rem;
+  }
+
+  /* ----- SECTION your-questions ----- */
+
+  .call-to-us {
+    left: 40%;
+  }
+
+  /* ----- SECTION map ----- */
+
+  .consult-form {
+    width: 50%;
+    padding: 0 3rem;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .nurse-bottom-list {
+    @include col(5.9);
+    float: none;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+  }
+
+  .our-location {
+    @include col(5.9);
+    float: none;
+    padding: 0 2rem;
+  }
+
+  .callback {
+    @include col(5.9);
+    float: none;
+    text-align: left;
+    padding: 0 2rem;
+  }
+}
+
+/* ----- MOBILE VERSION ----- */
+
+@media screen and (max-width: 799px) {
+
+  /* ===== HEADER ===== */
+
+  .logo-box {
+    @include col(4);
+  }
+
+  .contacts {
+    @include col(6);
+  }
+
+  /* ----- SECTION why-we ----- */
+
+  .we-suggest_item {
+    @include col(6);
+    margin-bottom: 3rem;
+  }
+
+  /* ----- SECTION selection ----- */
+
+  .selection-form {
+    left: 60%;
+  }
+
+  /* ----- SECTION prices ----- */
+
+  .price-list_cell1 {
+    @include col__f(6);
+  }
+
+  .price-list_cell2 {
+    @include col__f(4);
+  }
+
+  .price-list_cell3 {
+    @include col__f(2);
+  }
+
+  /* ----- SECTION reviews ----- */
+
+  .carusel__reviews {
+    max-width: 50rem;
+  }
+
+  /* ----- SECTION licenses ----- */
+
+  .carusel__licenses {
+    max-width: 50rem;
+  }
+
+  /* ----- SECTION your-questions ----- */
+
+  .call-to-us {
+    left: 30%;
+  }
+
+  /* ----- SECTION map ----- */
+
+  .consult-form {
+    width: 55%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  /* ===== HEADER ===== */
+
+  .logo-box {
+    @include col(5);
+  }
+
+  .contacts {
+    @include col(5);
+  }
+
+  /* ----- SECTION choose-nurse ----- */
+
+  .nurse-item {
+    @include col(12);
+    padding: 1.5rem;
+  }
+
+  /* ----- SECTION selection ----- */
+
+  .selection-form {
+    left: 50%;
+  }
+
+  /* ----- SECTION prices ----- */
+
+  .price-list_cell1 {
+    @include col__f(6);
+  }
+
+  .price-list_cell2 {
+    @include col__f(3);
+  }
+
+  .price-list_cell3 {
+    @include col__f(3);
+  }
+
+  /* ----- SECTION our-spec ----- */
+
+  .spec-list_item {
+    @include col(12);
+  }
+
+  .spec-list {
+    margin: 0 auto;
+  }
+
+  .spec-person {
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* ----- SECTION reviews ----- */
+
+  .carusel__reviews {
+    max-width: 44rem;
+  }
+
+  /* ----- SECTION licenses ----- */
+
+  .carusel__licenses {
+    max-width: 44rem;
+  }
+
+  /* ----- SECTION your-questions ----- */
+
+  .call-to-us {
+    left: 25%;
+  }
+
+  /* ----- SECTION map ----- */
+
+  .consult-form {
+    width: 59%;
+    padding: 0 1rem;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  /* ===== HEADER ===== */
+
+  .contacts {
+    display: none;
+  }
+
+  /* ----- SECTION why-we ----- */
+
+  .we-suggest_item {
+    @include col(12);
+  }
+
+  /* ----- SECTION selection ----- */
+
+  .selection-form {
+    left: 50%;
+  }
+
+  .selection-form_title {
+    font-size: 1.5em;
+  }
+
+  /* ----- SECTION prices ----- */
+
+  .price-list_cell {
+    font-size: 1.4em;
+  }
+
+  .price-list_cell1 {
+    @include col__f(6);
+  }
+
+  .price-list_cell2 {
+    @include col__f(3);
+  }
+
+  .price-list_cell3 {
+    @include col__f(3);
+  }
+
+  /* ----- SECTION achievements ----- */
+
+  .achievements_item {
+    @include col__f(12);
+  }
+
+  /* ----- SECTION call-nurse ----- */
+
+  .contact-us {
+    width: 32rem;
+    padding: 1rem;
+    margin-left: 0;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+  /* ----- SECTION reviews ----- */
+
+  .carusel__reviews {
+    max-width: 29rem;
+  }
+
+  /* ----- SECTION licenses ----- */
+
+  .carusel__licenses {
+    max-width: 29rem;
+  }
+
+  /* ----- SECTION your-questions ----- */
+
+  .call-to-us {
+    left: 0;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .call-to-us_link, .call-to-us_title {
+    font-size: 3em;
+  }
+
+  /* ----- SECTION map ----- */
+
+  .consult-form {
+    display: none;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .nurse-bottom-list {
+    @include col(12);
+    padding: 0 1rem;
+  }
+
+  .our-location {
+    @include col(12);
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .callback {
+    @include col(12);
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+}

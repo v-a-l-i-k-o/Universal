@@ -1,0 +1,671 @@
+﻿/* ===== CONTENT ===== */
+
+/* ----- NAV ----- */
+
+nav {
+  background-color: #08c;
+}
+
+.slicknav_menu {
+  display:none;
+}
+
+.menu {
+
+  & > li {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: #006ba1;
+    }
+
+    &:last-child {
+      border-right: 1px solid rgba(255, 255, 255, .2);
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: .7rem 3.42rem;
+    text-transform: uppercase;
+    line-height: 2.8rem;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #fff;
+  }
+}
+
+.submenu {
+  top: 130%;
+  opacity: 0;
+  z-index: -1;
+  left: -99999;
+  text-align: left;
+  position: absolute;
+  background-color: #0078b4;
+  transition: opacity 600ms ease, top 300ms ease;
+
+  li {
+    transition: all .3s ease;
+    
+    &:hover {
+      background-color: #006ba1;
+    }
+  }
+  
+  li + li {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  a {
+    display: block;
+    padding: .2rem 1.8rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+  }
+}
+
+.has-submenu:hover {
+
+  .submenu {
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    opacity: 1;
+  }
+}
+
+/* ----- SECTION take-care ----- */
+
+.take-care {
+  padding: 0;
+  background-color: #cccccc;
+}
+
+.slide__take-care {
+  min-height: 34.7rem;
+  @include bg(cover);
+
+  .container {
+    padding-top: 10rem;
+  }
+}
+
+.take-service {
+  padding-left: 6.5rem;
+
+  p {
+    margin-bottom: 4rem;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.slide1__take-care {
+  background-image: url('../img/bg/slide__take-care1-bg.png');
+  
+  p {
+    color: #000;
+  }
+}
+
+.slide2__take-care {
+  background-image: url('../img/bg/slide__take-care2-bg.png');
+}
+
+.slide3__take-care {
+  background-image: url('../img/bg/slide__take-care3-bg.png');
+}
+
+.slide4__take-care {
+  background-image: url('../img/bg/slide__take-care4-bg.png');
+}
+
+.slick-dots {
+  bottom: 2.5rem;
+}
+
+.slick-dots li {
+  margin: 0 .3rem;
+}
+
+.slick-dots li button {
+  width: 1rem;
+  height: 1rem;
+  opacity: .5;
+  background: #fff;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+.btn__take-service {
+  width: 18rem;
+  padding: 1rem 0;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* ----- SECTION why-we ----- */
+
+.why-we {
+
+  .title__2 {
+    margin-bottom: 5rem;
+  }
+}
+
+.we-suggest_item {
+  @include col(3);
+  text-align: center;
+}
+
+.we-suggest_brand {
+  height: 7rem;
+  width: 8.5rem;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+
+  img {
+    vertical-align: top;
+  }
+}
+
+.we-suggest_txt {
+  line-height: 1.6rem;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+/* ----- SECTION choose-nurse ----- */
+
+.choose-nurse {
+  padding-bottom: 2rem;
+}
+
+.nurse-list {
+  margin: 0 -1.5rem;
+}
+
+.nurse-item {
+  @include col(4);
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.nurse-item_pic {
+  position: relative;
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.nurse-item_title {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: 1.1rem 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 136, 204, .8);
+}
+
+.nurse-item_desc {
+  margin-bottom: 1.5rem;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #2e2e2e;
+}
+
+.nurse-item_more {
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #29a73d;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:after {
+    content: '>';
+    padding-left: .5rem;
+    display: inline-block;
+  }
+}
+
+/* ----- SECTION selection ----- */
+
+.selection {
+  position: relative;
+  min-height: 42rem;
+  @include bg(cover);
+  background-image: url('../img/bg/selection-bg.png');
+}
+
+.selection-form {
+  top: 50%;
+  left: 53%;
+  position: absolute;
+  width: 48.5rem;
+  padding: 1rem;
+  transform: translateY(-50%);
+}
+
+.selection-form_title {
+  margin-bottom: 2rem;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.form__selection {
+  width: 33.5rem;
+  padding: 4rem 3rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+  background-color: white;
+  box-shadow: 0 0 16px rgba(187, 187, 187, 0.44);
+}
+
+.btn__claim {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.8em;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+/* ----- SECTION prices ----- */
+
+.prices {
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+.price-list {
+  margin-bottom: 3rem;
+  border: 0.1rem solid rgba(210, 210, 210, 0.5);
+  text-align: left;
+  background-color: white;
+}
+
+.price-list_row {
+  @include clearfix;
+  padding: .5rem 1.5rem;
+
+  &:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+
+  & + .price-list_row {
+    border-top: 0.1rem solid rgba(210, 210, 210, 0.5);
+  }
+}
+
+.price-list_cell {
+  @include col__f(4);
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.price-list_cell1 {
+  @include col__f(5.7);
+}
+
+.price-list_cell2 {
+  @include col__f(5.1);
+}
+
+.price-list_cell3 {
+  @include col__f(1.2);
+}
+
+.all-info {
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #08c;
+  border-bottom: 1px dotted #08c;
+}
+
+/* ----- SECTION achievements ----- */
+
+.achievements {
+  padding: 9rem 0;
+  background-color: #f7f7f7;
+}
+
+.achievements-list {
+  margin: 0 -3rem;
+}
+
+.achievements_item {
+  @include col__f(3);
+  text-align: center;
+}
+
+.achievements_brand {
+  width: 17rem;
+  height: 11rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  font-size: 5.5em;
+  font-weight: 300;
+  line-height: 11rem;
+  text-transform: uppercase;
+  color: #fff;
+  @include bg(cover);
+  background-image: url('../img/bg/achievements_brand-bg.png');
+
+  .small {
+    margin: 0 -.6rem;
+    font-size: .45em;
+    font-style: normal;
+  }
+}
+
+.achievements_txt {
+  line-height: 1.6rem;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+/* ----- SECTION call-nurse ----- */
+
+.call-nurse {
+  padding-top: 6.5rem;
+  min-height: 28.8rem;
+  @include bg(cover);
+  background-image: url('../img/bg/call-nurse-bg.png');
+}
+
+.contact-us {
+  width: 53rem;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  text-align: center;
+
+  p {
+    line-height: 3rem;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #4a4a4a;
+
+    & + p {
+      margin-top: 1rem;
+    }
+  }
+
+  .hightlight {
+    color: #1fb4ff;
+    font-style: normal;
+  }
+
+  a {
+    color: #1fb4ff;
+    text-decoration: underline;
+  }
+}
+
+/* ----- SECTION our-spec ----- */
+
+.our-spec {
+  padding-bottom: 5rem;
+  text-align: center;
+
+  .title__2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.spec-list {
+  margin: 0 -3.5rem;
+}
+
+.spec-list_item {
+  @include col(3.9);
+  padding: 0 3.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.spec-person_avatar {
+  margin-bottom: 1.5rem;
+}
+
+.spec-person_title {
+  margin-bottom: 1.5rem;
+  line-height: 2.4rem;
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.spec-person_desc {
+  margin-bottom: 1.5rem;
+  line-height: 1.8rem;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.btn__get-info {
+  width: 16rem;
+  padding: .6rem;
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+/* ----- SECTION reviews ----- */
+
+.reviews {
+  padding-bottom: 6rem;
+  background-color: #f7f7f7;
+}
+
+.carusel__reviews {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.slide__reviews {
+  display: inline-block;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.slick-next, .slick-prev {
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin-top: -1.5rem;
+  background-color: #1fb4ff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:before {
+    display: none;
+  }
+}
+
+.slick-next {
+  right: -5rem;
+  background-image: url('../img/icons/arrow__r.png');
+}
+
+.slick-prev {
+  left: -5rem;
+  background-image: url('../img/icons/arrow__l.png');
+}
+
+.inits {
+  margin-top: 1rem;
+  line-height: 2.4rem;
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+/* ----- SECTION licenses ----- */
+
+.licenses {
+  padding-bottom: 8rem;
+}
+
+.carusel__licenses {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.slide__licenses {
+  display: inline-block;
+  height: 31.5rem;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  a {
+    height: 100%;
+    display: inline-block;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+/* ----- SECTION your-questions ----- */
+
+.your-questions {
+  min-height: 28.8rem;
+  padding-top: 7rem;
+  @include bg(cover);
+  background-image: url('../img/bg/your-questions-bg.png');
+}
+
+.call-to-us {
+  left: 50%;
+  position: relative;
+  width: 45rem;
+  padding: 0 1.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.call-to-us_title {
+  text-transform: uppercase;
+  line-height: 4.8rem;
+  font-weight: 700;
+  font-size: 3.6em;
+  color: #313131;
+}
+
+.call-to-us_link {
+  text-transform: uppercase;
+  line-height: 3.6rem;
+  font-weight: 700;
+  font-size: 3.6em;
+  color: #1fb4ff;
+}
+
+/* ----- SECTION about-us ----- */
+
+.about-us {
+  padding: 4.5rem 0;
+
+  p, ul {
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #343434;
+  }
+
+  ul {
+    a {
+      color: #1fb4ff;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+  }
+}
+
+.list-regions {
+
+  li {
+    display: inline-block;
+  }
+}
+
+/* ----- SECTION map ----- */
+
+.map {
+  position: relative;
+  padding: 0;
+  min-height: 44rem;
+}
+
+.consult-form {
+  right: 0;
+  height: 100%;
+  position: absolute;
+  width: 41.5%;
+  z-index: 2;
+  padding: 0 5.5rem;
+  background-color: rgba(255, 255, 255, .9);
+
+  .form {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}
+
+.form__selection {
+  text-align: center;
+
+  p {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-size: 2em;
+    color: #313131;
+  }
+}

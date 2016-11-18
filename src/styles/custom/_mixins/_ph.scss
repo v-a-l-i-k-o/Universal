@@ -1,0 +1,50 @@
+*:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+*[autofocus]::-moz-placeholder:focus {
+  color: graytext !important;
+}
+
+*:focus:-moz-placeholder {
+  color: transparent !important;
+}
+
+*[autofocus]:-moz-placeholder:focus {
+  color: graytext !important;
+}
+
+*:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+*[autofocus]::-webkit-input-placeholder {
+  color: graytext !important;
+}
+
+@mixin ph($c, $fs) {
+
+  &::-webkit-input-placeholder {
+    color: $c;
+    opacity: 1;
+    font-size: $fs;
+  }
+
+  &:-moz-placeholder {
+    color: $c;
+    opacity: 1;
+    font-size: $fs;
+  }
+
+  &::-moz-placeholder {
+    color: $c;
+    opacity: 1;
+    font-size: $fs;
+  }
+
+  &:-ms-input-placeholder {
+    color: $c;
+    opacity: 1;
+    font-size: $fs;
+  }
+}

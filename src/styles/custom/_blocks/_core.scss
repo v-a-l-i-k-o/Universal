@@ -1,0 +1,86 @@
+/* ===== CORE ===== */
+
+html, body {
+  font-family: 'Roboto';
+}
+
+section {
+  padding-top: 6rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 114rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.btn {
+  border: none;
+  padding: .9rem 0;
+  border-radius: .5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #1fb4ff;
+  box-shadow: 0 .3rem 0 #1990cb;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #0096e1;
+  }
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: .5rem;
+
+  .sprite {
+    margin: 0;
+    vertical-align: middle;
+  }
+}
+
+input.form-control {
+  width: 80%;
+  float: right;
+  padding: 1rem;
+  height: 4.3rem;
+  border-radius: 0 .5rem .5rem 0;
+  border: 0.1rem solid #b0b0b0;
+  font-size: 1.4em;
+  background-color: white;
+
+  @include ph(#a2a2a2, 14px);
+}
+
+.input-group_addon {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 20%;
+  height: 4.3rem;
+  display: inline-block;
+  border-radius: .5rem 0 0 .5rem;
+  border: 0.1rem solid #b0b0b0;
+  border-right: none;
+  text-align: center;
+  line-height: 4.3rem;
+  background-color: white;
+}
+
+.s-input-name {
+  @include sprite-box($s-input-name);
+}
+
+.s-input-phone {
+  @include sprite-box($s-input-phone);
+}
